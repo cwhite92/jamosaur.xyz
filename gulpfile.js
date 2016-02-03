@@ -1,13 +1,13 @@
 var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
-    rename = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
-var minifycss = require('gulp-minify-css');
-var sass = require('gulp-sass');
+    rename = require('gulp-rename'),
+    autoprefixer = require('gulp-autoprefixer'),
+    cssnano = require('gulp-cssnano'),
+    sass = require('gulp-sass');
 
 
 gulp.task('styles', function(){
-    gulp.src(['resources/assets/**/*.scss'])
+    gulp.src(['resources/assets/sass/*.scss'])
         .pipe(plumber({
             errorHandler: function (error) {
                 console.log(error.message);
@@ -15,9 +15,9 @@ gulp.task('styles', function(){
             }}))
         .pipe(sass())
         .pipe(autoprefixer('last 2 versions'))
-        .pipe(gulp.dest('public/css/'))
+        //.pipe(gulp.dest('public/css/'))
         .pipe(rename({suffix: '.min'}))
-        .pipe(minifycss())
+        .pipe(cssnano())
         .pipe(gulp.dest('public/css/'))
 });
 
