@@ -12,6 +12,14 @@
 @yield('content')
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script>
+    var $toggle = $('#header-toggle');
+    var $menu = $('#header-menu');
+
+    $toggle.click(function() {
+        $(this).toggleClass('is-active');
+        $menu.toggleClass('is-active');
+    });
+
     $(".working-on").click(function(e) {
         e.preventDefault();
         $('html, body').animate({

@@ -2,7 +2,12 @@
     <header class="header">
         <div class="container">
             <div class="header-left"></div>
-            <div class="header-right header-menu">
+            <span id="header-toggle" class="header-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <div id="header-menu" class="header-right header-menu">
                 <span class="header-item">
                     <a href="#" class="working-on is-active">
                         What am i working on?
