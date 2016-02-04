@@ -55,7 +55,9 @@
                                                 {{ $repo['description'] }}
                                             </small>
                                             <br>
-                                            <small>{{ $repo['updated_at'] }}</small>
+                                            <small class="timestamp">
+                                                {{ \Carbon\Carbon::parse($repo['updated_at'])->toDateTimeString() }}
+                                            </small>
                                         </div>
                                     </div>
                                 </div>
