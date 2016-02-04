@@ -1,0 +1,14 @@
+<div class="hero-header">
+    <header class="header">
+        <div class="container">
+            <div class="header-left"></div>
+            <div class="header-right header-menu">
+                <span class="header-item">
+                    <a href="#" class="working-on is-active">
+                        What am i working on?
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+</div>

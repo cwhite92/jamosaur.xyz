@@ -2,18 +2,7 @@
 
 @section('content')
     <section class="hero is-primary is-fullheight">
-        <div class="hero-header">
-            <header class="header">
-                <div class="container">
-                    <div class="header-left"></div>
-                    <div class="header-right header-menu">
-                        <span class="header-item">
-                            <a href="#">What i'm working on</a>
-                        </span>
-                    </div>
-                </div>
-            </header>
-        </div>
+        @include('partials._nav')
         <div class="hero-content">
             <div class="container">
                 <h1 class="title">
@@ -38,9 +27,15 @@
         </div>
     </section>
 
-    <section class="hero is-info is-fullheight">
+    <section class="hero is-info is-fullheight work">
         <div class="hero-content">
             <div class="container" style="width:100%">
+                <h1 class="title">
+                    What am i working on?
+                </h1>
+                <h2 class="subtitle">
+                    a few things!
+                </h2>
                 @foreach($repos->chunk(4) as $chunk)
                     <div class="columns">
                         @foreach($chunk as $repo)
