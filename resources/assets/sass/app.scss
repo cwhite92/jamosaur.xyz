@@ -8,3 +8,14 @@
     color:#fff;
   }
 }
+
+.card {
+  width:auto;
+  height:100%;
+  color: $grey-dark;
+  text-align: left;
+
+  .title {
+    color: $grey-darker !important;
+  }
+}
