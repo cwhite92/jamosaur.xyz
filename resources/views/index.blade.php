@@ -71,11 +71,11 @@
             <div class="container">
                 <p class="is-right">
                     <small>find me on github!</small>
-                <span class="icon large">
-                    <a href="https://github.com/jamosaur" target="_blank">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </span>
+                    <span class="icon large">
+                        <a href="https://github.com/jamosaur" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </span>
                 </p>
             </div>
         </div>
