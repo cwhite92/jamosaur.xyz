@@ -10,5 +10,14 @@
 </head>
 <body>
 @yield('content')
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script>
+    $(".working-on").click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $(".work").offset().top
+        }, 2000);
+    });
+</script>
 </body>
 </html>
