@@ -16,7 +16,7 @@
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $(".work").offset().top
-        }, 2000);
+        }, 1500);
     });
 </script>
 </body>

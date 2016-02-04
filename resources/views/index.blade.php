@@ -48,15 +48,16 @@
                                                 <span class="tag is-primary">{{ $repo['language'] }}</span>
                                             </div>
                                         </div>
-
                                         <div class="content">
-
                                             <small>
                                                 {{ $repo['description'] }}
                                             </small>
                                             <br>
                                             <small class="timestamp">
-                                                {{ \Carbon\Carbon::parse($repo['updated_at'])->toDateTimeString() }}
+                                                <a href="{{ $repo['html_url'] }}">
+                                                    view
+                                                </a>
+                                                | {{ \Carbon\Carbon::parse($repo['updated_at'])->toDateTimeString() }}
                                             </small>
                                         </div>
                                     </div>
