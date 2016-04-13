@@ -1,6 +1,6 @@
 <?php
 
-Route::get('', [
+$router->get('', [
     'as'    => 'index',
     'uses'  => 'HomeController@index'
 ]);
